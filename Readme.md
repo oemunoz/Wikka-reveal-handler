@@ -1,44 +1,40 @@
 # WikkaWiki Markdown Handler plugin
-[![RevealJS](https://github.com/oemunoz/Wikka-md-handler/raw/master/images/Markdown.png)](https://github.com/hakimel/reveal.js/)
-[![WikkaWiki](https://github.com/oemunoz/Wikka-md-handler/raw/master/images/wizard.gif)](http://wikkawiki.org/HomePage)
+[![RevealJS](https://github.com/oemunoz/Wikka-reveal-handler/raw/master/images/Markdown.png)](https://github.com/hakimel/reveal.js/)
+[![WikkaWiki](https://github.com/oemunoz/Wikka-reveal-handler/raw/master/images/wizard.gif)](http://wikkawiki.org/HomePage)
 
 ## What is this?
-Yes, this is a markdown parser for [WikkaWiki](http://wikkawiki.org/HomePage) for Markdown, the magic is from the [Cebe Markdown parser](http://markdown.cebe.cc/).
+This is a a framework for easily creating beautiful presentations using HTML and markdown on Wikkawiki.
 
-![Edit Markdown](https://github.com/oemunoz/Wikka-md-handler/raw/master/images/mmymdoc_edit.png)
+![Fisr slide](https://github.com/oemunoz/Wikka-reveal-handler/raw/master/images/reveal_fist.png)
 
-> Note that the current Geshi buttons are for the Wikka format, Im am working on use the [yii2-markdown](https://github.com/kartik-v/yii2-markdown), for the edit controls. But Markdown is not a dificult Format to learn.
 
-Easy steeps:
+Easy steps:
 
 1. Put this repo on "/plugins/handlers/md" directory.
 
-2. Copy the prisma css and js to your theme.
 
-3. Add the ".md" support to your Wakka.class.php file, this like on the example located on this repo "examples/Wakka.class.php.example".
 
-The detalled installed is explain on the next points:
-(Sorry for my English Im gonna to fix this at some time.)
-
-![Parse Markdown](https://github.com/oemunoz/Wikka-md-handler/raw/master/images/mmymdoc_parse.png)
 
 ## Why?
-By defect WikkaWiki has their own formatting rules (these rules work like a charm), but on this days is very common to write all kain of documentation on Markdown, Markdown is the prefered formatting code for all kain of projects. I dont have a problem to know both ways of formatting, but is a lot of work traduce from one to the other, this plugin works on this point.
+Is a very easy way to create and follow presentations with reveal.js.
 
 ## How?
-This plugin works in two ways (both if you wish), supose that mydoc and mydoc.md contains a document on Markdown format:
+This plugin works like any handler on WikkaWiki, supose that slide.md contains a presentation on Markdown format:
 
 1. With a Handler md.
 For example:
 ```
- wikka.php?wakka=mmymdoc/md
+ wikka.php?wakka=slide.md
 ```
+![Markdown parser](https://github.com/oemunoz/Wikka-reveal-handler/raw/master/images/mmymdoc_parser.png)
 
 1. With a document that finish on ".md".
 For example:
 ```
- wikka.php?wakka=mmymdoc.md
+ wikka.php?wakka=slide.md/reveal
 ```
+
+![Edit Markdown](https://github.com/oemunoz/Wikka-reveal-handler/raw/master/images/reveal_markdown.png)
 
 ### How install it?
 This plugins has two behaviors:
