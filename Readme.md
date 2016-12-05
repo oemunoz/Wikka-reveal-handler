@@ -9,7 +9,7 @@ This is a a framework for easily creating beautiful presentations using HTML and
 
 Easy steps:
 
-1. Put this repo on "/plugins/handlers/md" directory.
+1. Put this repo on "/plugins/handlers/reveal" directory.
 
 ## Why?
 Is a very easy way to create and follow presentations with reveal.js.
@@ -52,7 +52,7 @@ git clone https://github.com/oemunoz/Wikka-reveal-handler.git reveal/
 Now, If you completed this, create a new document like this:
 
 ~~~~
-wikka.php?wakka=slides/edit
+wikka.php?wakka=slides.md/edit
 ~~~~
 
 ~~~~language-markdown
