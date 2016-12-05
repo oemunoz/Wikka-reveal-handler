@@ -26,6 +26,7 @@ For example:
 [![Markdown parser](https://github.com/oemunoz/Wikka-reveal-handler/raw/master/images/mmymdoc_parser.png)](https://github.com/oemunoz/Wikka-md-handler)
 
 1. With a document that finish on ".md".
+
 For example:
 ```
  wikka.php?wakka=slide.md/edit
