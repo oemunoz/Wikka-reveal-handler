@@ -36,7 +36,7 @@ For example:
 For this handler is good to get [Wikka-md-handler](https://github.com/oemunoz/Wikka-md-handler), but is not a requeriment.
 
 #### Install the handler:
-The first is like a simple Handler, this meaning that you have to add "/md" to the end of the url. In any case you have to install the handler for both opions:
+The first is like a simple Handler, this meaning that you have to add "/reveal" to the end of the url. In any case you have to install the handler for both opions:
 
 1. Drop this repo on your "/plugins/handlers/reveal" directory.
 
@@ -48,6 +48,17 @@ git clone https://github.com/oemunoz/Wikka-reveal-handler.git reveal/
 ```
 
 ![Directory estructure](https://github.com/oemunoz/Wikka-reveal-handler/raw/master/images/paths.png)
+
+Edit the follow code near to the end of "libs/Wakka.class.php", backup your original file and the new must be like:
+
+```language-php
+<?php ....
+elseif($this->GetHandler() == 'reveal')
+{
+  print($this->Handler($this->GetHandler()));
+}
+.... ?>
+```
 
 Now, If you completed this, create a new document like this:
 
@@ -98,7 +109,7 @@ wikka.php?wakka=slide.md/reveal
 
 - We can change the background?
 
-> R: For now, is not, but on the follow release we gonna to allow to upload files for this in mind.
+> R: For now, is not, but on the follow release we gonna to allow to upload files with this in mind.
 
 - [ ] TODO: Create uploads directory.
 - [ ] TODO: Auto path images on the upload directory.
