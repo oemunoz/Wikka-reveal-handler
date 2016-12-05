@@ -1,4 +1,4 @@
-# WikkaWiki Markdown Handler plugin
+# WikkaWiki Reveal Handler plugin
 [![RevealJS](https://github.com/oemunoz/Wikka-reveal-handler/raw/master/images/Revealjs.jpg)](https://github.com/hakimel/reveal.js/)
 [![WikkaWiki](https://github.com/oemunoz/Wikka-reveal-handler/raw/master/images/wizard.gif)](http://wikkawiki.org/HomePage)
 
@@ -10,6 +10,7 @@ This is a a framework for easily creating beautiful presentations using HTML and
 Easy steps:
 
 1. Put this repo on "/plugins/handlers/reveal" directory.
+2. Edit the Wakka.class.php for allow the reveal handler.
 
 ## Why?
 Is a very easy way to create and follow presentations with reveal.js.
@@ -17,7 +18,7 @@ Is a very easy way to create and follow presentations with reveal.js.
 ## How?
 This plugin works like any handler on WikkaWiki, supose that slide.md contains a presentation on Markdown format:
 
-1. With a Handler md.
+1. With a markdown Handler (this view must be ugly if you dont have [Wikka-md-handler](https://github.com/oemunoz/Wikka-md-handler)).
 For example:
 ```
  wikka.php?wakka=slide.md
