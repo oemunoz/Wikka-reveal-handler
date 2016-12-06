@@ -1,8 +1,10 @@
 # WikkaWiki Reveal Handler plugin
+
 [![RevealJS](https://github.com/oemunoz/Wikka-reveal-handler/raw/master/images/Revealjs.jpg)](https://github.com/hakimel/reveal.js/)
 [![WikkaWiki](https://github.com/oemunoz/Wikka-reveal-handler/raw/master/images/wizard.gif)](http://wikkawiki.org/HomePage)
 
 ## What is this?
+
 This is a a framework for easily creating beautiful presentations using HTML and markdown on Wikkawiki.
 
 ![Fisr slide](https://github.com/oemunoz/Wikka-reveal-handler/raw/master/images/reveal_fist.png)
@@ -13,21 +15,27 @@ Easy steps:
 2. Edit the Wakka.class.php for allow the reveal handler.
 
 ## Why?
+
 Is a very easy way to create and follow presentations with reveal.js.
 
 ## How?
+
 This plugin works like any handler on WikkaWiki, supose that slide.md contains a presentation on Markdown format:
 
-1. With a markdown Handler (this view must be ugly if you dont have [Wikka-md-handler](https://github.com/oemunoz/Wikka-md-handler)).
+1. With a markdown Handler (without markdown handler this view must be ugly, if you dont have yet take a look on [Wikka-md-handler](https://github.com/oemunoz/Wikka-md-handler)).
+
 For example:
+
 ```
  wikka.php?wakka=slide.md
 ```
+
 [![Markdown parser](https://github.com/oemunoz/Wikka-reveal-handler/raw/master/images/mmymdoc_parser.png)](https://github.com/oemunoz/Wikka-md-handler)
 
 1. With a document that finish on ".md".
 
 For example:
+
 ```
  wikka.php?wakka=slide.md/edit
 ```
@@ -35,17 +43,20 @@ For example:
 ![Edit Markdown](https://github.com/oemunoz/Wikka-reveal-handler/raw/master/images/reveal_markdown.png)
 
 ### How install it?
+
 For this handler is good to get [Wikka-md-handler](https://github.com/oemunoz/Wikka-md-handler), but is not a requeriment.
 
 #### Install the handler:
+
 The first is like a simple Handler, this meaning that you have to add "/reveal" to the end of the url. In any case you have to install the handler for both opions:
 
-1. Drop this repo on your "/plugins/handlers/reveal" directory.
+Drop this repo on your "/plugins/handlers/reveal" directory.
 
 Directory Estructure:
 
-```language-bash
+```bash
 cd plugins/handlers/
+mkdir reveal
 git clone https://github.com/oemunoz/Wikka-reveal-handler.git reveal/
 ```
 
@@ -53,7 +64,7 @@ git clone https://github.com/oemunoz/Wikka-reveal-handler.git reveal/
 
 Edit the follow code near to the end of "libs/Wakka.class.php", backup your original file and the new must be like:
 
-```language-php
+```php
 <?php ....
 elseif($this->GetHandler() == 'reveal')
 {
