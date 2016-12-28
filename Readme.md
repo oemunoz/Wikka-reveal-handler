@@ -1,4 +1,4 @@
-# WikkaWiki Reveal Handler plugin
+# [WikkaWiki Reveal Handler plugin](https://github.com/oemunoz/Wikka-reveal-handler)
 
 [![RevealJS](https://github.com/oemunoz/Wikka-reveal-handler/raw/master/images/Revealjs.jpg)](https://github.com/hakimel/reveal.js/)
 [![WikkaWiki](https://github.com/oemunoz/Wikka-reveal-handler/raw/master/images/wizard.gif)](http://wikkawiki.org/HomePage)
