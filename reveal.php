@@ -9,18 +9,18 @@ $site_base = WIKKA_BASE_URL;
 
 		<title>reveal.js</title>
 
-		<link rel="stylesheet" href="<?php echo $site_base ?>plugins/handlers/reveal/css/reveal.css">
-		<link rel="stylesheet" href="<?php echo $site_base ?>plugins/handlers/reveal/css/theme/moon.css">
+		<link rel="stylesheet" href="<?php echo $site_base ?>plugins/handlers/reveal/reveal.js/css/reveal.css">
+		<link rel="stylesheet" href="<?php echo $site_base ?>plugins/handlers/reveal/reveal.js/css/theme/moon.css">
 
 		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="<?php echo $site_base ?>plugins/handlers/reveal/lib/css/zenburn.css">
+		<link rel="stylesheet" href="<?php echo $site_base ?>plugins/handlers/reveal/reveal.js/lib/css/zenburn.css">
 
 		<!-- Printing and PDF exports -->
 		<script>
 			var link = document.createElement( 'link' );
 			link.rel = 'stylesheet';
 			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? '<?php echo $site_base ?>plugins/handlers/reveal/css/print/pdf.css' : '<?php echo $site_base ?>plugins/handlers/reveal/css/print/paper.css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? '<?php echo $site_base ?>plugins/handlers/reveal/reveal.js/css/print/pdf.css' : '<?php echo $site_base ?>plugins/handlers/reveal/reveal.js/css/print/paper.css';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
 	</head>
@@ -37,8 +37,8 @@ $site_base = WIKKA_BASE_URL;
 			</div>
 		</div>
 
-		<script src="<?php echo $site_base ?>plugins/handlers/reveal/lib/js/head.min.js"></script>
-		<script src="<?php echo $site_base ?>plugins/handlers/reveal/js/reveal.js"></script>
+		<script src="<?php echo $site_base ?>plugins/handlers/reveal/reveal.js/lib/js/head.min.js"></script>
+		<script src="<?php echo $site_base ?>plugins/handlers/reveal/reveal.js/js/reveal.js"></script>
 
 		<script>
 			// More info https://github.com/hakimel/reveal.js#configuration
@@ -47,10 +47,10 @@ $site_base = WIKKA_BASE_URL;
 
 				// More info https://github.com/hakimel/reveal.js#dependencies
 				dependencies: [
-					{ src: '<?php echo $site_base ?>plugins/handlers/reveal/plugin/markdown/marked.js' },
-					{ src: '<?php echo $site_base ?>plugins/handlers/reveal/plugin/markdown/markdown.js' },
-					{ src: '<?php echo $site_base ?>plugins/handlers/reveal/plugin/notes/notes.js', async: true },
-					{ src: '<?php echo $site_base ?>plugins/handlers/reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+					{ src: '<?php echo $site_base ?>plugins/handlers/reveal/reveal.js/plugin/markdown/marked.js' },
+					{ src: '<?php echo $site_base ?>plugins/handlers/reveal/reveal.js/plugin/markdown/markdown.js' },
+					{ src: '<?php echo $site_base ?>plugins/handlers/reveal/reveal.js/plugin/notes/notes.js', async: true },
+					{ src: '<?php echo $site_base ?>plugins/handlers/reveal/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
 				]
 			});
 		</script>
