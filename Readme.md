@@ -2,6 +2,20 @@
 [![RevealJS](https://github.com/oemunoz/Wikka-reveal-handler/raw/master/images/Revealjs.jpg)](https://github.com/hakimel/reveal.js/)
 [![WikkaWiki](https://github.com/oemunoz/Wikka-reveal-handler/raw/master/images/wizard.gif)](http://wikkawiki.org/HomePage)
 
+## Important!:
+
+Now the code of plugin is on another directory, please this version of plugin is tested with reveal.js 3.3.0:
+
+https://github.com/hakimel/reveal.js/releases/tag/3.3.0
+
+```bash
+plugins/handlers/reveal$ ls -1
+images
+Readme.md
+reveal.js
+reveal.php
+```
+
 ## What is this?
 This is a a framework for easily creating beautiful presentations using HTML and markdown on Wikkawiki.
 
