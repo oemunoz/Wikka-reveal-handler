@@ -45,6 +45,7 @@ $site_base = WIKKA_BASE_URL;
 
 		<script>
 Reveal.initialize({
+center: true,
 plugins: [ RevealMarkdown,RevealHighlight ]
 //dependencies: [
 //    { src: '<?php echo $site_base ?>plugins/handlers/reveal/reveal.js/plugin/markdown/markdown.js' },
